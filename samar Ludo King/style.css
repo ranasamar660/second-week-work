@@ -1,0 +1,202 @@
+.main{
+    width: 580px;
+    height: 560px;
+    border: 20px double rgb(183 181 172);
+    border-radius: 15px;
+}
+img{
+    width: 580px;
+    height: 560px;
+}
+.ludo-main{
+    width: 480px;
+    height: 480px;
+    border: transparent;
+    position: relative;
+    left: 53px;
+    bottom: 528px;
+    box-shadow: -4px 9px 43px 10px #181717;
+}
+.box-row{
+    display: flex;
+}
+.box{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+.box1{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: red;
+}
+.box2{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: green;
+}
+.box3{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: blue;
+}
+.box4{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #FF6F00;
+}
+.player1{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: red;
+    border-radius: 100px;
+}
+.player2{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: green;
+    border-radius: 100px;
+
+}
+.player3{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: blue;
+    border-radius: 100px;
+
+}
+.player4{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #FF6F00;
+    border-radius: 100px;
+}
+.tryangle{
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+}
+.point{
+    position: relative;
+    bottom: 528px;
+    right: 13px;
+}
+.center-box1{
+    width: 3px;
+    border-top: solid 48px transparent;
+    border-left: solid 48px red;
+    border-bottom: 48px solid transparent;
+    position: absolute;
+    left: 258px;
+    bottom: 191px;
+}
+.center-box2{
+    border-right: solid 44px transparent;
+    border-left: solid 48px transparent;
+    border-bottom: 48px solid blue;
+    position: absolute;
+    bottom: 192px;
+    left: 259px;
+    width: 2px;
+}
+.center-box3{
+    width: 3px;
+    border-top: solid 48px transparent;
+    border-right: solid 48px #FF6F00;
+    border-bottom: 48px solid transparent;
+    position: absolute;
+    bottom: 191px;
+    left: 303px;
+}
+.center-box4{
+    border-top: solid 49px green;
+    border-left: solid 49px transparent;
+    border-right: 49px solid transparent;
+    position: absolute;
+    border-bottom: 0px solid transparent;
+    bottom: 239px;
+    left: 257px;
+}
+.bc{
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+    background-color: red;
+}
+.bc2{
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+    background-color: green;  
+}
+.bc3{
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+    background-color: blue; 
+}
+.bc4{
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+    background-color:#FF6F00;
+}
+.bw1{
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+    background-color: white;     
+
+}
+i{
+    color: white;
+    position: relative;
+    left: 7px;
+    top: 6px;
+}
+.icon3{
+    color: blue;
+    margin-left: 2px;
+}
+.icon{
+    color: red;
+}
+.icon2{
+    color: green;
+    margin-left: 2px;
+}
+.icon4{
+    color: #FF6F00;
+}
+.heart{
+    color: white;
+}
+.button{
+    width: 71px;
+    height: 36px;
+    background-color: red;
+    margin-left: 247px;
+    color: white;
+    margin-top: 5px;
+}
+.btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .button2{
+    width: 71px;
+    height: 36px;
+    background-color: red;
+    margin-left: 0px;
+    color: white;
+    margin-top: 5px;
+  }

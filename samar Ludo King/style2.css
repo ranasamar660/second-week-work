@@ -1,0 +1,205 @@
+.ludo-main{
+    width: 504px;
+    border: 9px solid  #9E9E9E;
+    border-radius: 75px;
+}
+.display{
+    display: flex;
+}
+.box1{
+    width: 200px;
+    height: 200px;
+    border: 1px solid transparent;
+    background-color: red;
+    border-top-left-radius: 66px;
+}
+.box3{
+    width: 199px;
+    height: 200px;
+    border: 1px solid transparent;
+    background-color: green;
+    border-top-right-radius: 66px;
+}
+.box2{
+    width: 100px;
+    height: 200px;
+    border: 1px solid black;
+}
+.colum{
+    display: inline-grid;
+    margin: -2px;
+}
+.chota-box1{
+    width: 32px;
+    height: 32px;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+.box4{
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+}
+.row{
+    display: inline-flex;
+    margin: -2px;
+    margin-top: -4px;
+    position: relative;
+    top: 4px;
+}
+.chota-box2{
+    width: 32px;
+    height: 32px;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+.box5{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+.iner-box1{
+    border-left: 50px solid red;
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid transparent;
+}
+.iner-box3{
+    border-top: 50px solid green;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    position: relative;
+    bottom: 200px;
+}
+.iner-box4{
+    border-bottom: 50px solid blue;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    position: relative;
+    bottom: 200px;
+}
+.iner-box2{
+    border-right: 50px solid chocolate;
+    border-bottom: 50px solid transparent;
+    border-top: 50px solid transparent;
+    position: relative;
+    bottom: 100px;
+}
+.box6{
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+}
+.box7{
+    width: 200px;
+    height: 200px;
+    border: 1px solid transparent;
+    background-color: blue;
+    border-bottom-left-radius: 66px;
+}
+.box9{
+    width: 199px;
+    height: 200px;
+    border: 1px solid transparent;
+    background-color: chocolate;
+    border-bottom-right-radius: 66px;
+}
+.box8{
+    width: 100px;
+    height: 200px;
+    border: 1px solid black;
+}
+.bc{
+    background-color: green;
+}
+.star{
+    color: green;
+    font-size: 31px;
+}
+.bc2{
+    background-color: red;
+}
+.star2{
+    color: red;
+    font-size: 31px;
+    margin-left: -1px;
+}
+.star3{
+    color: chocolate;
+    font-size: 31px;
+    margin-left: -2px;
+}
+.star4{
+    color: blue;
+    font-size: 31px;
+    margin-left: -1px;
+}
+.rd{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.rd2{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.rd3{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.rd4{
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+}
+.bc3{
+    background-color: chocolate;
+}
+
+.bc4{
+    background-color:blue ;
+}
+.home-box{
+    width: 100px;
+    height: 100px;
+    border: 8px double white;
+    border-radius: 20px;
+    position: relative;
+    top: 45px;
+    left: 45px;
+}
+.home-box-iner{
+    width: 25px;
+    height: 25px;
+    border: 2px solid white;
+    border-radius: 100px;
+    background-color: white;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+button{
+    width: 71px;
+    height: 36px;
+    background-color: rgb(255, 0, 0);
+    margin-left: 192px;
+    margin-top: 10px;
+    color: white;
+}
+.back{
+    width: 71px;
+    height: 36px;
+    background-color: rgb(250, 5, 5);
+    color: white;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+.btn2:active {
+    background-color: #fa0606;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .btn:active {
+    background-color: #11f719;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
