@@ -1,13 +1,12 @@
 .main-wrapper {
     width: 180vh;
-    height: 95vh;
+    height: 85vh;
     background-color: rgb(233, 231, 231);
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
 }
-
 .header {
     width: 160vh;
     height: 15vh;
@@ -30,7 +29,7 @@
     border-radius: 100%;
     background-color: red;
     position: relative;
-    right: -100px;
+    right: -83px;
     top: 55px;
     display: flex;
     align-items: center;
@@ -213,7 +212,9 @@
 .aside {
     width: 50vh;
     height: 75vh;
-    background-color: wheat;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
 }
 .circle-flex{
     display: flex;
@@ -308,4 +309,43 @@
     margin-left: 20px;
     padding-top: 10px;
     margin-top: 10px;
+}
+.aside-iner{
+    width: 40vh;
+    height: 54vh;
+    background-color: white;
+    font-family: sans-serif;
+    color: #615d5d;
+    font-size: 14px;
+}
+.first-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 7px;
+    margin-top: 10px;
+}
+.second{
+    display: flex;
+    align-items: center;
+    margin-top: -8px;
+    width: 252px;
+    padding-left: 10px;
+    height: 37px;
+    background-color: #42A5F5;
+}
+.three-1{
+    display: flex;
+    align-items: center;
+    width: 252px;
+    padding-left: 10px;
+    height: 37px;
+}
+.three{
+    display: flex;
+    align-items: center;
+    margin-top: -8px;
+    width: 252px;
+    padding-left: 10px;
+    height: 37px;
 }
