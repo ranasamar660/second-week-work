@@ -307,6 +307,10 @@ header{
     font-size: 14px;
     margin-left: 60px;
 }
+.view-hover:hover{
+    color: white; 
+    background-color: #F57C00;
+}
 .article-child2{
     width: 120px;
     height: 28px;
@@ -319,6 +323,10 @@ header{
     border-radius: 5px;
     font-size: 14px;
     margin-left: 84px;
+}
+.view-hover2:hover{
+    color: white; 
+    background-color:#e11868;
 }
 .article-child3{
     width: 120px;
@@ -333,6 +341,10 @@ header{
     font-size: 14px;
     margin-left: 84px;
 }
+.view-hover3:hover{
+    color: white; 
+    background-color: #4CAF50;
+}
 .article-child4{
     width: 120px;
     height: 28px;
@@ -345,6 +357,10 @@ header{
     border-radius: 5px;
     font-size: 14px;
     margin-left: 60px;
+}
+.view-hover4:hover{
+    color: white; 
+    background-color: #1976D2;
 }
 .article-part2-head{
     color: #353434;
@@ -361,11 +377,21 @@ header{
     background-color: #f1ae07;
     padding: 10px;
 }
+.box-hover:hover{
+    color: white;
+    background-color: #f1ae07;
+    border: 1px solid white;
+}
 .part2-second-box{
 width: 35%;
 border-radius: 5px;
 background-color: #f30c67;
 padding: 10px;
+}
+.box-hover2:hover{
+    color: white;
+    background-color: #f30c67;
+    border: 1px solid white;
 }
 .first-box-child{
     width: 40px;
@@ -475,6 +501,10 @@ padding: 10px;
     border-radius: 5px;
     font-size: 14px;
     margin-top: 5px;
+}
+.course-hover:hover {
+    color: white;
+    background-color: gray;
 }
 .col1-col2{
     width: 203%;
@@ -589,7 +619,10 @@ padding: 10px;
     border-radius: 4px;
 }
 .col-3{
-width: 100%;    
+width: 100%; 
+background-color: white;
+margin-top: 10px;
+padding-bottom: 10px;   
 }
 .aside-head2{
     color: #353434;
