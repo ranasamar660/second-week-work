@@ -345,29 +345,7 @@ let questionsHtml = [
     document.querySelector('#countdown2').textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
   }
   
-// js question
-function loadJsQuestion() {
-  if (currentQuestionIndex >= questionsJs.length) {
-    clearInterval(globalTimer);
-    clearInterval(countdownTimer);
-    alert("Exam completed!");
-    return;
-  }
-  const questionData = questionsJs[currentQuestionIndex];
-  const questionContainer = document.getElementById('questionContainer');  
-  document.getElementById('questionContainer').style.background="orange";
-  questionContainer.innerHTML = `
-    <div class="question">${questionData.question}</div>
-    <div class="choices">
-      ${questionData.choices.map((choice, index) => `
-        <div>
-          <input type="radio" name="choice" id="choice${index}" value="${index}">
-          <label for="choice${index}">${choice}</label>
-        </div>
-      `).join('')}
-    </div>
-  `;
-}
+
 // html question
   function loadHtmlQuestion() {
     if (currentQuestionIndex >= questionsHtml.length) {
@@ -403,6 +381,29 @@ function loadCssQuestion() {
   const questionData = questionsCss[currentQuestionIndex];
   const questionContainer = document.getElementById('questionContainer');
   document.getElementById('questionContainer').style.background="red";
+  questionContainer.innerHTML = `
+    <div class="question">${questionData.question}</div>
+    <div class="choices">
+      ${questionData.choices.map((choice, index) => `
+        <div>
+          <input type="radio" name="choice" id="choice${index}" value="${index}">
+          <label for="choice${index}">${choice}</label>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+// js question
+function loadJsQuestion() {
+  if (currentQuestionIndex >= questionsJs.length) {
+    clearInterval(globalTimer);
+    clearInterval(countdownTimer);
+    alert("Exam completed!");
+    return;
+  }
+  const questionData = questionsJs[currentQuestionIndex];
+  const questionContainer = document.getElementById('questionContainer');  
+  document.getElementById('questionContainer').style.background="orange";
   questionContainer.innerHTML = `
     <div class="question">${questionData.question}</div>
     <div class="choices">
@@ -455,14 +456,24 @@ function loadCssQuestion() {
     loadJsQuestion();
     startJsCountdown();
   }
-  function AllbtnExam(){
-    document.querySelector('#allbtn').style.display="none";
-    initializeHtmlExam();
-    document.querySelector('#html-btn').style.display="block";
-    initializeCssExam();
-    document.querySelector('#css-btn').style.display="block";
-    initializejsExam();
-    document.querySelector('#js-btn').style.display="block";
+ 
+   // js question
+   function initializejsExam() {
+    document.querySelector('#JsQuestion').style.display="block";
+    document.querySelector('#HtmlQuestion').style.display="none";
+    document.querySelector('#CssQuestion').style.display="none";
+    const wrapper =document.getElementById('wrap').style.display="block";
+   
+    loadJsQuestion();
+  }
+   // css question
+   function initializeCssExam() {
+    const wrapper =document.getElementById('wrap').style.display="block";
+    document.querySelector('#CssQuestion').style.display="block";
+    document.querySelector('#JsQuestion').style.display="none";
+    document.querySelector('#HtmlQuestion').style.display="none";
+    
+    loadCssQuestion();
   }
   
   // html question
@@ -477,29 +488,17 @@ function loadCssQuestion() {
     
     
   }
-  // css question
-  function initializeCssExam() {
-    const wrapper =document.getElementById('wrap').style.display="block";
-    document.querySelector('#CssQuestion').style.display="block";
-    document.querySelector('#JsQuestion').style.display="none";
-    document.querySelector('#HtmlQuestion').style.display="none";
-    
-    loadCssQuestion();
-  }
-   // js question
-   function initializejsExam() {
-    document.querySelector('#JsQuestion').style.display="block";
-    document.querySelector('#HtmlQuestion').style.display="none";
-    document.querySelector('#CssQuestion').style.display="none";
-    const wrapper =document.getElementById('wrap').style.display="block";
-   
-    loadJsQuestion();
-  }
-//js question
-  function StartExam(){
+  
+  function AllbtnExam(){
+    document.querySelector('#allbtn').style.display="none";
+    initializeHtmlExam();
+    document.querySelector('#html-btn').style.display="block";
+    initializeCssExam();
+    document.querySelector('#css-btn').style.display="block";
+    initializejsExam();
+    document.querySelector('#js-btn').style.display="block";
     startHtmlGlobalTimer();
     startHtmlCountdown();
     const x = document.getElementById('startExam');
     x.style.display="none";
   }
-  

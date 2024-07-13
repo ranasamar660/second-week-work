@@ -16,7 +16,6 @@ body {
 .nav-btns {
     display: none;
 }
-
 .f {
     display: flex;
     gap: 10px;
