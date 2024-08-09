@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(21, 112, 248);
+    color: white;
+    align-items: center;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.text{
+    width: 90%;
+    border: 2px black solid;
+    padding: 10px;
+    margin-left: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+h2{
+    margin-left: 10px;
+    font-family: sans-serif;
+}
+.ol-1{
+    margin-left: 80px;
+    font-weight: bold;
+    font-family: sans-serif;
+    line-height: 35px;
+}
+.ol-2{
+    font-weight: bold;
+    font-family: sans-serif;  
+    background-color: rgb(179, 176, 176);
+    width: fit-content; 
+    padding: 12px 40px;
+    margin-left: 10px;
+    
+}
+.ul-part-2{
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 20px;
+    line-height: 30px;
+
+}
+.part-1{
+    border: 10px solid red;
+    width: 60%;
+    margin-left: 10px;
+}
+.part-3{
+    border: 10px solid red;
+    width: 75%;
+    margin-left: 10px;
+}
+h3{
+    margin-left: 10px;
+    font-family: sans-serif;
+}
+pre{
+    font-size: 18px;
+    border: red 2px dashed;
+    width: fit-content;
+    padding: 10px;
+    margin-left: 20px;
+}
+.green{
+    color: #117f15;
+}
+.blue{
+    color: blue ;
+}
+.ol-3{
+    font-weight: bold;
+    font-family: sans-serif;  
+    background-color: rgb(179, 176, 176);
+    width: fit-content; 
+    padding: 12px 40px;
+    margin-left: 10px;
+   
+}
