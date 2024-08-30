@@ -107,9 +107,6 @@ body {
     text-transform: uppercase;
 }
 
-/*==========================================
-    Author CSS
-==========================================*/
 
 /* ==== Header CSS Start ==== */
 
@@ -446,9 +443,13 @@ body {
     width: 35px;
     z-index: 1;
 }
+.cd-timeline-img:hover{
+    background-color: #00d7bb;
+}
+
 
 .educaton-content .cd-timeline-img span.dot {
-    background-color: #00d7bb;
+    background-color: #fff;
     border-radius: 50%;
     display: block;
     height: 10px;
@@ -576,9 +577,12 @@ body {
     width: 35px;
     z-index: 1;
 }
+.experience-content .cd-timeline-img:hover{
+    background-color: #00d7bb;
+}
 
 .experience-content .cd-timeline-img span.dot {
-    background-color: #00d7bb;
+    background-color: #fff;
     border-radius: 50%;
     display: block;
     height: 10px;
@@ -726,7 +730,7 @@ body {
 }
 
 .single-skill-bottom h2 {
-    color: #000;
+    color: #fff;
     font-size: 37px;
     font-weight: 700;
 }
@@ -790,14 +794,51 @@ a{
     font-weight: bold;
 }
 
-.assignment{
-    color: #fff;
-    width: 315px;
-    background: transparent;
-    border: 2px solid rgba(10, 0, 0, 0.2);
-    padding: 30px 40px;
+.container-1 {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.assignment-box {
+    background-color: #a2e1db;
     border-radius: 12px;
-    backdrop-filter: (9px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.assignment-box h2 {
+    margin-bottom: 10px;
+    color: #0d533c;
+    font-size: 1.5em;
+}
+
+.assignment-box p {
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #00695C;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #117b6d;
+    color: #eef5f4;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color:#02cfb4;
+    transform: scale(1.05);
 }
 
 .single-testimonial h3 {
