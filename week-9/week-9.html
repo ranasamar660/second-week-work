@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/> 
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 9</title>
+    
+</head>
+<body>
+    <div class="main-container">
+        <input type="text" placeholder="number1" id="num1">
+        <input type="text" placeholder="number2" id="num2">
+        <input type="text" placeholder="operator" id="operator">
+        <button id="submit">submit</button>
+        <div class="results"></div>
+        <div class="history">
+            <h3><i class="ri-chat-history-fill" id="history-icon"></i></h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    
+
+    <script>
+        let history = [];
+
+        function cal(num1, num2, op) {
+            if (op == "+")
+                return num1 + num2;
+            if (op == "-")
+                return num1 - num2;
+            if (op == "/")
+                return num1 / num2;
+            if (op == "*")
+                return num1 * num2;
+            if (op == "%")
+                return num1 % num2;
+            return "Invalid operator!";
+        }
+
+        document.getElementById("submit").addEventListener("click", () => {
+            let number1 = parseFloat(document.getElementById('num1').value);
+            let number2 = parseFloat(document.getElementById('num2').value);
+            let operator = document.getElementById('operator').value;
+
+          if(number1==='' || number2 ===''|| operator ===''){ 
+            alert("pleasre insert values!");
+            return;
+          }
+          else{
+
+            let result = cal(number1, number2, operator);
+
+            document.querySelector('.results').textContent = " = " + result;
+
+            let calculation = `${number1} ${operator} ${number2} = ${result}`;
+            history.push(calculation);
+
+            let historyList = document.getElementById('history-list');
+            let listItem = document.createElement('li');
+            listItem.textContent = calculation;
+            historyList.appendChild(listItem);
+
+            document.getElementById('num1').value = ''
+            document.getElementById('num2').value = ''
+            document.getElementById('operator').value = ''
+
+          }
+        });
+
+    
+        document.getElementById('history-icon').addEventListener('click', () => {
+            let historyList = document.getElementById('history-list');
+            if (historyList.style.display === 'none' || historyList.style.display === '') {
+                historyList.style.display = 'block';
+            } else {
+                historyList.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
