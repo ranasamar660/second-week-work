@@ -15,15 +15,23 @@
     <div class="main-container">
         <input type="text" placeholder="number1" id="num1">
         <input type="text" placeholder="number2" id="num2">
-        <input type="text" placeholder="operator" id="operator">
+        <select name="" id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
         <button id="submit">submit</button>
-        <div class="results"></div>
+        <div class="results" id="results"></div>
         <div class="history">
-            <h3><i class="ri-chat-history-fill" id="history-icon"></i></h3>
+            <h3>
+                <i class="ri-chat-history-line" id="history-icon"></i>
+                 <i class="ri-delete-bin-line" id="clear-history"></i>
+            </h3>
             <ul id="history-list"></ul>
         </div>
     </div>
-    
 
     <script>
         let history = [];
@@ -48,14 +56,14 @@
             let operator = document.getElementById('operator').value;
 
           if(number1==='' || number2 ===''|| operator ===''){ 
-            alert("pleasre insert values!");
+            alert("please insert values!");
             return;
           }
           else{
 
             let result = cal(number1, number2, operator);
 
-            document.querySelector('.results').textContent = " = " + result;
+            document.getElementById('results').textContent = " = " + result;
 
             let calculation = `${number1} ${operator} ${number2} = ${result}`;
             history.push(calculation);
@@ -80,6 +88,13 @@
             } else {
                 historyList.style.display = 'none';
             }
+        });
+
+        document.getElementById('clear-history').addEventListener('click', () => {
+            history = [];
+            let historyList = document.getElementById('history-list');
+            historyList.innerHTML = '';
+            document.querySelector('.results').textContent = '';
         });
     </script>
 </body>
