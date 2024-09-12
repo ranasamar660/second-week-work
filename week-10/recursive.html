@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recursive.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/> 
+    <title>Recursive function</title>
+</head>
+
+<body>
+    <h2>Recursive Function</h2>
+     <div class="container">
+      <input type="text" id="number" placeholder="Enter a number">
+      <select id="operation" class="option">
+        <option value="factorial">Factorial</option>
+        <option value="square">Square</option>
+      </select>
+      
+      <button onclick="CalculateMethod()">Calculate</button>
+      <div class="result"><b>Result:</b></div>
+      <i class="ri-delete-bin-line" id="clear-history"></i>
+     </div>
+
+<script>
+    function factorial(n) {
+        if (n == 0) {
+            return 1;
+        }
+        return n * factorial(n - 1);
+    }
+
+    function square(n) {
+        return n * n;
+    }
+
+    function CalculateMethod() {
+        let input = document.getElementById('number').value;
+        let number = parseInt(input);
+        let operation = document.getElementById('operation').value;
+        let result = document.querySelector(".result");
+
+        let count;
+
+        if (operation === 'factorial') {
+            count = factorial(number);
+        } else if (operation === 'square') {
+            count = square(number);
+        }
+
+        result.innerHTML = `<b>Result: </b> ${count}`;
+    }
+
+    document.getElementById('clear-history').addEventListener('click', () => {
+        document.querySelector(".result").innerHTML = `<b>Result: </b>`;
+    });
+</script>
+</body>
+</html>
