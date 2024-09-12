@@ -23,7 +23,7 @@ flex-direction: column;
 align-items: center;
 }
 input{
-width: 200px;
+width: 60%;
 height: 20px;
 margin-top: -145px;
 padding: 9px;
@@ -35,7 +35,7 @@ background: rgba(255, 255, 255, 1.3);
 box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.4);
 }
 .option{
-    width: 200px;
+    width: 60%;
     height: 37px;
     margin-top: 18px;
     border-radius: 16px;
@@ -47,7 +47,7 @@ box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.4);
 
     }
 button{
-width: 200px;
+width: 60%;
 height: 43px;
 margin-top: 22px;
 padding: 9px;
@@ -64,7 +64,7 @@ button:hover{
 }
 .result{
     margin-top: 15px;
-    width: 180px;
+    width: 60%;
     padding: 10px;
     font-weight: bold;
     color: black;
@@ -74,4 +74,10 @@ button:hover{
     color: red;
     margin-top: -29px;
     margin-left: 175px;
+}
+
+@media(max-width:500px){
+   .container{
+    width: 80%;
+   }
 }
