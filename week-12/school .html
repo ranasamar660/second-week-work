@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>School Management</title>
+</head>
+<body>
+    <h1>School Management System</h1>
+
+    <!-- Teacher Form -->
+    <div class="teacherForm form-container" style="display: none;">
+        <h2>Add Teacher</h2>
+        <div class="input-container">
+            <div>
+                <input type="text" placeholder="Name" id="teacherName" class="input">
+                <input type="text" placeholder="Father Name" id="teacherFatherName" class="input">
+            </div>
+            <div>
+                <input type="date" placeholder="DOB" id="teacherDob" class="input-dob">
+                <select name="Gender" id="teacherGender" class="input">
+                    <option value="">Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+            <div>
+                <input type="number" placeholder="Salary" id="teacherSalary" class="input">
+                <select name="Salary Status" id="teacherSalaryStatus" class="input">
+                    <option value="">Salary Status</option>
+                    <option value="Paid">Paid</option>
+                    <option value="Unpaid">Unpaid</option>
+                </select>
+            </div>
+            <div>
+                <input type="text" placeholder="Qualification" id="teacherQualify" class="input">
+                <select name="Subject" id="teacherSubject" class="input">
+                    <option value="">Subject</option>
+                    <option value="English">English</option>
+                    <option value="Computer">Computer</option>
+                    <option value="Urdu">Urdu</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Math">Math</option>
+                </select>
+            </div>
+            <button class="input-btn" id="addTeacher">Add Teacher</button>
+        </div>
+    </div>
+
+    <!-- Student Form -->
+    <div class="studentForm form-container" style="display: none;">
+        <h2>Add Student</h2>
+        <div class="input-container">
+            <div>
+                <input type="text" placeholder="Name" id="studentName" class="input">
+                <input type="text" placeholder="Father Name" id="studentFatherName" class="input">
+            </div>
+            <div>
+                <input type="date" placeholder="DOB" id="studentDob" class="input-dob">
+                <select name="Gender" id="studentGender" class="input">
+                    <option value="">Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+            <div>
+                <input type="text" placeholder="Class" id="studentClass" class="input">
+                <input type="number" placeholder="Fee" id="studentFee" class="input">
+            </div>
+            <button class="input-btn" id="addStudent">Add Student</button>
+        </div>
+    </div>
+
+    <div class="btn-flex">
+        <button id="addInputformTeacher" class="btn-addTeacher">Add Teacher</button>
+        <button id="addInputformStudent" class="btn-addStudent">Add Student</button>
+    </div>
+    <div id="result"></div> 
+
+    <script src="teacher.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+.input-container{
+    width: 400px;
+    height: 300px;
+    border: 2px solid black;
+    background-color: rgb(114, 113, 113);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.input{
+    padding: 10px 12px;
+
+}
+select{
+    padding: 10px 12px;
+    width: 198px;
+}
+.input-dob{
+    padding: 10px 12px;
+    width: 169px;
+}
+.btn-flex{
+    display: flex;
+    gap: 20px;
+}
+.btn-addTeacher{
+    width: 120px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: linear-gradient(to right, #17D396, #07F7F7);
+    border: 1px solid #17D396;
+    display: block;
+}
+.btn-addTeacher:hover{
+    background-color: #06f7aa;
+}
+.btn-addStudent{
+    width: 120px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: linear-gradient(to right, #17D396, #07F7F7);
+    border: 1px solid #17D396;
+    display: block;
+}
+.input-btn{
+    padding: 10px 12px;
+    background: linear-gradient(to right, #17D396, #07F7F7);
+    border: none;
+    display: block;
+    width: 200px;
+    border-radius: 12px;
+}
+.teacherForm{
+    display: none;
+}
+#result table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+#result th, #result td {
+    border: 1px solid #07F7F7;
+    padding: 8px;
+}
+#result th {
+    background: linear-gradient(to right, #17D396, #07F7F7);
+    text-align: left;
+}
