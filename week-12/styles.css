@@ -82,7 +82,7 @@ select{
     background: linear-gradient(to right, #17D396, #07F7F7);
     text-align: left;
 }
-@media screen  and (min-width:1200px) {
+@media screen  and (max-width:1400px) {
     .input-container{
         width: 400px;
     height: 300px;
@@ -93,5 +93,42 @@ select{
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    }
+    .input{
+        padding: 10px 12px;
+    
+    }
+    select{
+        padding: 10px 12px;
+        width: 198px;
+    }
+    .input-dob{
+        padding: 10px 12px;
+        width: 169px;
+    }
+}
+@media screen  and (max-width:500px) {
+    .input-container{
+        width: 400px;
+    height: 300px;
+    border: 2px solid black;
+    background-color: rgb(114, 113, 113);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    }
+    .input{
+        padding: 10px 12px;
+    
+    }
+    select{
+        padding: 10px 12px;
+        width: 198px;
+    }
+    .input-dob{
+        padding: 10px 12px;
+        width: 169px;
     }
 }
