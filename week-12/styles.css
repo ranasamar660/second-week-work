@@ -98,7 +98,7 @@ select{
     background: linear-gradient(to right, #17D396, #07F7F7);
     text-align: left;
 }
-@media only screen and (min-width:450px) {
+@media only screen and (min-width:300px) {
     .header{
         width: 110%;
     }
