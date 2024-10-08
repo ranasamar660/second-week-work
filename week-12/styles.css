@@ -98,3 +98,17 @@ select{
     background: linear-gradient(to right, #17D396, #07F7F7);
     text-align: left;
 }
+@media only screen and (min-width:320px) {
+    .header{
+        width: 100%;
+    }
+    .input-container{
+        width: 100%;
+    }
+    h2{
+        width: 100%;
+    }
+    #result{
+        width: 100%;
+    }
+}
