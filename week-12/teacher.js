@@ -213,7 +213,7 @@
                         <td>${student.student_class}</td>
                         <td>${student.fee}</td>
                         <td>${student.joining_date}</td>
-                        <td> <i class="ri-delete-bin-line" onclick="clear()"></i></td>
+                        <td> <i class="ri-delete-bin-line" onclick="clear()" ></i></td>
                     </tr>
                 `;
             });
@@ -230,6 +230,6 @@
 function clear(){
     history = [];
     let historyList = document.getElementById('addStudent');
-    historyList.innerHTML = '';
-    document.getElementById('result').textContent = '';
+    historyList.innerHTML = ' ';
+    document.getElementById('result').textContent = ' ';
 }
