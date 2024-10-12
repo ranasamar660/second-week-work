@@ -1,7 +1,6 @@
 
         let teachers = [];
         let students = [];
-        let history =[];
 
         class Person {
             constructor(name, dob, gender) {
@@ -197,7 +196,6 @@
                             <th>Class</th>
                             <th>Fee</th>
                             <th>Joining Date</th>
-                            <th>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -213,7 +211,6 @@
                         <td>${student.student_class}</td>
                         <td>${student.fee}</td>
                         <td>${student.joining_date}</td>
-                        <td> <i class="ri-delete-bin-line" onclick="clear()" ></i></td>
                     </tr>
                 `;
             });
@@ -226,10 +223,3 @@
             studentsSection.innerHTML += table;
         }
        
-// clear history
-function clear(){
-    history = [];
-    let historyList = document.getElementById('addStudent');
-    historyList.innerHTML = ' ';
-    document.getElementById('result').textContent = ' ';
-}
