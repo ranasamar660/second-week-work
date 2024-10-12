@@ -1,9 +1,4 @@
-body{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-}
+
 .input-container{
     width: 450px;
     height: 300px;
@@ -13,6 +8,35 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
+}
+i{
+    color: #ebe2e2;
+}
+.main-container{
+    width: 100%;
+    display: flex;
+}
+.nav-bar{
+    width: 20%;
+    background-color: #646262;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+img{
+    width: 75px;
+    height: 75px;
+    border-radius: 40px;
+    margin-left: 20px;
+}
+.result-container{
+    width: 80%;
+    background-color: #98bde1;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 .header{
@@ -46,6 +70,7 @@ select{
 }
 .btn-flex{
     display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 .btn-addTeacher{
@@ -73,11 +98,16 @@ select{
 }
 .input-btn{
     padding: 10px 12px;
-    background: linear-gradient(to right, #17D396, #07F7F7);
+    background: linear-gradient(to right, #283593, #56e7d9);
     border: none;
     display: block;
     width: 200px;
     border-radius: 12px;
+    color: white;
+}
+.ri-delete-bin-line{
+    color: red;
+    font-size: 18px;
 }
 .teacherForm{
     display: none;
@@ -93,22 +123,9 @@ select{
 #result th, #result td {
     border: 1px solid #07F7F7;
     padding: 8px;
+    background: #c7c5c3;
 }
 #result th {
-    background: linear-gradient(to right, #17D396, #07F7F7);
+    background: linear-gradient(to right, #BBDEFB, #42A5F5);
     text-align: left;
-}
-@media only screen and (min-width:300px) {
-    .header{
-        width: 110%;
-    }
-    .input-container{
-        width: 100%;
-    }
-    h2{
-        width: 100%;
-    }
-    #result{
-        width: 100%;
-    }
 }

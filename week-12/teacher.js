@@ -1,6 +1,7 @@
 
         let teachers = [];
         let students = [];
+        let history =[];
 
         class Person {
             constructor(name, dob, gender) {
@@ -44,15 +45,11 @@
         addInputformTeacher.addEventListener("click", () => {
             document.querySelector(".teacherForm").style.display = "block";
             document.querySelector(".studentForm").style.display = "none";
-            document.getElementById("addInputformTeacher").style.display = "none";
-            document.getElementById("addInputformStudent").style.display = "block";
         });
 
         addInputformStudent.addEventListener("click", () => {
             document.querySelector(".studentForm").style.display = "block";
             document.querySelector(".teacherForm").style.display = "none";
-            document.getElementById("addInputformTeacher").style.display = "block";
-            document.getElementById("addInputformStudent").style.display = "none";
         });
 
         // Event Listener Teacher
@@ -89,7 +86,6 @@
 
             document.querySelector(".teacherForm").style.display = "none";
         });
-
         // Event Listener Student
         const addStudentButton = document.getElementById("addStudent");
         addStudentButton.addEventListener("click", () => {
@@ -120,7 +116,6 @@
             
             document.querySelector(".studentForm").style.display = "none";
         });
-
         // Function Teachers
         function displayTeachers() {
             const resultDiv = document.getElementById("result");
@@ -137,7 +132,7 @@
                         <tr>
                             <th>Name</th>
                             <th>Father Name</th>
-                            <th>DOB</th>
+                            <th>Age</th>
                             <th>Gender</th>
                             <th>Salary</th>
                             <th>Salary Status</th>
@@ -197,11 +192,12 @@
                         <tr>
                             <th>Name</th>
                             <th>Father Name</th>
-                            <th>DOB</th>
+                            <th>Age</th>
                             <th>Gender</th>
                             <th>Class</th>
                             <th>Fee</th>
                             <th>Joining Date</th>
+                            <th>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -217,6 +213,7 @@
                         <td>${student.student_class}</td>
                         <td>${student.fee}</td>
                         <td>${student.joining_date}</td>
+                        <td> <i class="ri-delete-bin-line" onclick="clear()"></i></td>
                     </tr>
                 `;
             });
@@ -228,3 +225,11 @@
 
             studentsSection.innerHTML += table;
         }
+       
+// clear history
+function clear(){
+    history = [];
+    let historyList = document.getElementById('addStudent');
+    historyList.innerHTML = '';
+    document.getElementById('result').textContent = '';
+}
