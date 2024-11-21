@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="template.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Template</title>
+    <style>
+        .fs {
+            font-size: 70px;
+            font-family: sans-serif;
+        }
+
+        .margin-left {
+            margin-left: 150px;
+        }
+
+        .hover {
+            color: white;
+        }
+
+        .hover:hover {
+            color: yellow;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .active {
+            display: block !important;
+        }
+    </style>
+
+
+
+</head>
+
+<body class="bg-black text-white">
+
+    <nav class="navbar navbar-expand-lg bg-black pt-3 pb-3">
+        <div class="container-fluid">
+            <div class="w-25">
+                <a class="navbar-brand text-white fw-bold fs-3" href="#"><span class="text-warning">Nova</span>Ride</a>
+            </div>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold margin-left">
+                    <li class="nav-item">
+                        <a class="nav-link hover " aria-current="page" href="#demos-section">Demos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover" href="#features-section">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover" href="#">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover" href="#">Support</a>
+                    </li>
+                </ul>
+                <div class="w-100 d-flex justify-content-end">
+                    <button class="text-white rounded-pill px-5 fw-bold py-3 btn btn-outline-warning">Purchase
+                        Now</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <div>
+        <p class="text-warning text-center mt-5 mb-0 fs fw-bold ">Car Rental</p>
+        <p class="text-white text-center fs fw-bold">HTML Template</p>
+        <div class="w-100 d-flex justify-content-center mt-5 gap-2">
+            <button class="text-white rounded-pill px-5 fw-bold py-3 btn btn-outline-warning">Explore Demos</button>
+            <button class="text-white rounded-pill px-5 fw-bold py-3 btn btn-outline-warning">Purchase Now</button>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <img class="w-50" src="novaride-banner-1024x576.png" alt="">
+        </div>
+        <div class="bg-warning d-flex justify-content-evenly p-3">
+            <div class="fs-5 fw-bold">* 100% Responsive Design</div>
+            <div class="fs-5 fw-bold">* Awesome Support</div>
+            <div class="fs-5 fw-bold">* Multiple Unique Demo</div>
+            <div class="fs-5 fw-bold">* Quality Check by Themeforest</div>
+        </div>
+        <div>
+            <p class="text-warning text-center mt-5 fs-6">Select one of the Ready Made Layouts</p>
+            <p id="demos-section" class=" text-white text-center fs fw-bold">Premium Demos</p>
+        </div>
+        <div class="w-100 d-flex justify-content-center mt-4 gap-2">
+            <button class="text-white rounded-pill px-5 fw-bold py-3 btn btn-outline-warning"
+                onclick="showContent('home')">Home Page</button>
+            <button class="text-white rounded-pill px-5 fw-bold py-3 btn btn-outline-dark"
+                onclick="showContent('light')">Inner Page - Light</button>
+            <button class="text-white rounded-pill px-5 fw-bold py-3 btn btn-outline-dark"
+                onclick="showContent('dark')">Inner Page - Dark</button>
+        </div>
+
+        <div id="home" class="content active">
+            <div class="d-flex justify-content-evenly mt-5">
+                <img class="w-25 mt-5 rounded-5 border border-dark border-4" src="novaride-light-1.jpg" alt="">
+                <img class="w-25 mt-5 rounded-5 border border-dark border-4" src="novaride-light-home-2.jpg" alt="">
+                <img class="w-25 mt-5 rounded-5 border border-dark border-4" src="novaride-light-1.jpg" alt="">
+            </div>
+            <div class="d-flex justify-content-around">
+                <p class="fw-bold fs-5 mt-2">Light - Image Demo</p>
+                <p class="fw-bold fs-5 mt-2">Light - video Demo</p>
+                <p class="fw-bold fs-5 mt-2">Light - Slider Demo</p>
+            </div>
+            <div class="d-flex justify-content-evenly mt-5">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-home-1.png" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-home-2.png" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-home-3.png" alt="">
+            </div>
+            <div class="d-flex justify-content-around">
+                <p class="fw-bold fs-5 mt-2">Dark - Image Demo</p>
+                <p class="fw-bold fs-5 mt-2">Dark - video Demo</p>
+                <p class="fw-bold fs-5 mt-2">Dark - Slider Demo</p>
+            </div>
+        </div>
+
+        <div id="light" class="content">
+            <div class="d-flex justify-content-evenly mt-5">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-light-about.jpg" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-light-services.jpg" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-light-service-single.jpg" alt="">
+            </div>
+            <div class="d-flex justify-content-around">
+                <p class="fw-bold fs-5 mt-2">About Us</p>
+                <p class="fw-bold fs-5 mt-2">Services</p>
+                <p class="fw-bold fs-5 mt-2">Service Signal</p>
+            </div>
+
+            <div class="d-flex justify-content-evenly mt-5">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-light-cars.jpg" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-light-car-single.jpg" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-light-car-type.jpg" alt="">
+            </div>
+            <div class="d-flex justify-content-around">
+                <p class="fw-bold fs-5 mt-2">Car List</p>
+                <p class="fw-bold fs-5 mt-2">Car Single</p>
+                <p class="fw-bold fs-5 mt-2">Car Type</p>
+            </div>
+
+            <div class="d-flex justify-content-evenly mt-5 align-items-center">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-light-blog.jpg" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-light-blog-single.jpg" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-light-drivers.jpg" alt="">
+            </div>
+            <div class="d-flex justify-content-around align-items-center">
+                <p class="fw-bold fs-5 mt-2">Blog</p>
+                <p class="fw-bold fs-5 mt-2">Blog Single</p>
+                <p class="fw-bold fs-5 mt-2">Drivers</p>
+            </div>
+
+            <div class="d-flex justify-content-evenly mt-5">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-light-driver-single.jpg" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-light-pricing.jpg" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-light-image-gallery.jpg" alt="">
+            </div>
+            <div class="d-flex justify-content-around">
+                <p class="fw-bold fs-5 mt-2">Driver Detail</p>
+                <p class="fw-bold fs-5 mt-2">Pricing</p>
+                <p class="fw-bold fs-5 mt-2">Image Gallery</p>
+            </div>
+    
+            <div class="d-flex justify-content-evenly mt-5">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-light-video-gallery.jpg" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-light-testimonials.jpg" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-light-contact.jpg" alt="">
+            </div>
+            <div class="d-flex justify-content-around">
+                <p class="fw-bold fs-5 mt-2">Video Gallery</p>
+                <p class="fw-bold fs-5 mt-2">Testimonials</p>
+                <p class="fw-bold fs-5 mt-2">Contact us</p>
+            </div>
+            <div class="d-flex justify-content-evenly mt-5 align-items-center">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-light-faq.jpg" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-light-404.jpg" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="" alt="">
+            </div>
+            <div class="d-flex justify-content-around align align-items-center">
+                <p class="fw-bold fs-5 mt-2">FAQs</p>
+                <p class="fw-bold fs-5 mt-2">Page not found</p>
+                <p class="fw-bold fs-5 mt-2 mr-2">empty</p>
+            </div>
+
+        </div>
+
+     
+        <div id="dark" class="content">
+            <div class="d-flex justify-content-evenly mt-5">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-about.png" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-services.png" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-service-single.png" alt="">
+            </div>
+            <div class="d-flex justify-content-around">
+                <p class="fw-bold fs-5 mt-2">About Us</p>
+                <p class="fw-bold fs-5 mt-2">Services</p>
+                <p class="fw-bold fs-5 mt-2">Service Signal</p>
+            </div>
+
+            <div class="d-flex justify-content-evenly mt-5">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-cars.png" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-car-details.png" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-car-type.png" alt="">
+            </div>
+            <div class="d-flex justify-content-around">
+                <p class="fw-bold fs-5 mt-2">Car List</p>
+                <p class="fw-bold fs-5 mt-2">Car Single</p>
+                <p class="fw-bold fs-5 mt-2">Car Type</p>
+            </div>
+
+            <div class="d-flex justify-content-evenly mt-5 align-items-center">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-blog.png" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-blog-single.png" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-driver.png" alt="">
+            </div>
+            <div class="d-flex justify-content-around align-items-center">
+                <p class="fw-bold fs-5 mt-2">Blog</p>
+                <p class="fw-bold fs-5 mt-2">Blog Single</p>
+                <p class="fw-bold fs-5 mt-2">Drivers</p>
+            </div>
+
+            <div class="d-flex justify-content-evenly mt-5">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-car-details.png" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-pricing.png" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-image-gallery.png" alt="">
+            </div>
+            <div class="d-flex justify-content-around">
+                <p class="fw-bold fs-5 mt-2">Driver Detail</p>
+                <p class="fw-bold fs-5 mt-2">Pricing</p>
+                <p class="fw-bold fs-5 mt-2">Image Gallery</p>
+            </div>
+    
+            <div class="d-flex justify-content-evenly mt-5">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-video-gallery.png" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-testimonials.png" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-contact.png" alt="">
+            </div>
+            <div class="d-flex justify-content-around">
+                <p class="fw-bold fs-5 mt-2">Video Gallery</p>
+                <p class="fw-bold fs-5 mt-2">Testimonials</p>
+                <p class="fw-bold fs-5 mt-2">Contact us</p>
+            </div>
+            <div class="d-flex justify-content-evenly mt-5 align-items-center">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-faqs.png" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="novaride-dark-404.png" alt="">
+                <img class="w-25 rounded-5 border border-dark border-4" src="" alt="">
+            </div>
+            <div class="d-flex justify-content-around align align-items-center">
+                <p class="fw-bold fs-5 mt-2">FAQs</p>
+                <p class="fw-bold fs-5 mt-2">Page not found</p>
+                <p class="fw-bold fs-5 mt-2 mr-2">empty</p>
+            </div>
+        </div>
+        <div class="bg-warning mt-5 py-5">
+            <p class="fw-bold fs text-center">Get Novaride and create a <br>
+                professional website today!</p>
+            <div class="d-flex justify-content-center mt-5">
+                <button class="text-white rounded-pill px-5 fw-bold py-3 btn btn-outline-dark">Purchase Now</button>
+            </div>
+        </div>
+        <div>
+            <p class="text-warning text-center mt-5 fs-6">Why choose us?</p>
+            <p id="features-section" class="text-white text-center fs fw-bold">Exclusive Features</p>
+        </div>
+        <div class="d-flex justify-content-around">
+            <div class="fs-5 bg-dark w-25 text-center py-5 px-1 rounded-5 ">
+                <div class="fs text-warning"><i class="ri-pages-line"></i></div>
+                <div class="fw-bold ">17+ Ready pages</div>
+                <p class="fs-6 mt-3">Save your time and effort by using our pre-built pages in your web development
+                    projects.</p>
+            </div>
+            <div class="fs-5 bg-dark w-25 text-center py-5 px-1 rounded-5">
+                <div class="fs text-warning"><i class="ri-smartphone-line"></i></div>
+                <div class="fw-bold ">100% Mobile Responsive</div>
+                <p class="fs-6 mt-3">Responsive design that ensures your websites will work well on all devices.</p>
+            </div>
+            <div class="bg-dark w-25 text-center py-5 px-1 rounded-5">
+                <div class="fs text-warning"><i class="ri-css3-line"></i><i class="ri-html5-line"></i></div>
+                <div class="fw-bold">Valid HTML & CSS</div>
+                <p class="fs-6 mt-3">Validate HTML & CSS code that ensure that the code complies with industry
+                    standards.</p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-around mt-5">
+            <div class="fs-5 bg-dark w-25 text-center py-5 px-1 rounded-5 ">
+                <div class="fs text-warning"><i class="ri-code-box-line"></i></div>
+                <div class="fw-bold ">Clean Code</div>
+                <p class="fs-6 mt-3">Ensure website efficiency with clean and optimized code.</p>
+            </div>
+            <div class="fs-5 bg-dark w-25 text-center py-5 px-1 rounded-5">
+                <div class="fs text-warning"><i class="ri-map-pin-user-line"></i></div>
+                <div class="fw-bold ">Google Map</div>
+                <p class="fs-6 mt-3">Display your business location with ease using Google Maps.
+            </div>
+            <div class="bg-dark w-25 text-center py-5 px-1 rounded-5">
+                <div class="fs text-warning"><i class="ri-group-3-fill"></i></div>
+                <div class="fw-bold fs-5 ">Friendly Support</div>
+                <p class="fs-6 mt-3">Get prompt and friendly support for any website-related issues.</p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-around mt-5">
+            <div class="fs-5 bg-dark w-25 text-center py-5 px-1 rounded-5 ">
+                <div class="fs text-warning"><i class="ri-edit-box-line"></i></div>
+                <div class="fw-bold ">Theme Typography</div>
+                <p class="fs-6 mt-3">The creative use of fonts to convey emotions and enhance design.</p>
+            </div>
+            <div class="fs-5 bg-dark w-25 text-center py-5 px-1 rounded-5">
+                <div class="fs text-warning"><i class="ri-article-line"></i></div>
+                <div class="fw-bold ">Well Documented</div>
+                <p class="fs-6 mt-3">Access detailed documentation for easy website maintenance and updates.</p>
+            </div>
+            <div class="bg-dark w-25 text-center py-5 px-1 rounded-5">
+                <div class="fs text-warning"><i class="ri-font-size"></i></div>
+                <div class="fw-bold fs-5">Google Font</div>
+                <p class="fs-6 mt-3">Choose from a vast selection of Google fonts to personalize web design.</p>
+            </div>
+        </div>
+        <div class="bg-dark mt-5 py-5">
+            <p class="fw-bold fs text-center">Get Novaride and create a <br>
+                professional website today!</p>
+            <div class="d-flex justify-content-center gap-5">
+                <div class="fs-5 fw-bold">* No monthly charge</div>
+                <div class="fs-5 fw-bold">* Life Time free update</div>
+                <div class="fs-5 fw-bold">* Premium support</div>
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+                <button class="text-white rounded-pill px-5 fw-bold py-3 btn btn-outline-warning">Purchase Now</button>
+            </div>
+            <hr>
+            <p class="text-center mt-4 fs-5">Copyright © Novaride All Rights Reserved. Powered by Awaiken</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        function showContent(section) {
+            document.querySelectorAll('.content').forEach((content) => {
+                content.classList.remove('active');
+            });
+            document.getElementById(section).classList.add('active');
+        }
+    </script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+
+</body>
+
+</html>
