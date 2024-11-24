@@ -1,0 +1,58 @@
+.fs {
+    font-size: 70px;
+    font-family: sans-serif;
+}
+
+.margin-left {
+    margin-left: 150px;
+}
+.clr{
+    color: #FF3600;
+}
+.bg-clr-2{
+background-color: #FF3600;
+color: white;
+border: none;
+}
+.bg-clr{
+    background-color: #FF3600;
+    border: none;
+    color: white;
+}
+.bg-clr:hover{
+    background-color: white;
+    color: black;
+}
+.bg{
+    background-color: #FFFFFF33;
+    border: none;
+}
+.bg:hover{
+    background-color: #FF3600;
+    color: white;
+}
+.content {
+    display: none;
+}
+
+.active {
+    display: block !important;
+}
+
+.text {
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: fadeInFromTop 4s ease forwards;
+}
+
+@keyframes fadeInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
