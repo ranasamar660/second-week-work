@@ -1,0 +1,23 @@
+
+        function createStar() {
+            const star = document.createElement('div');
+            star.classList.add('star');
+
+            const size = Math.random() * 2 + 1;
+            const x = Math.random() * window.innerWidth; 
+            const y = Math.random() * window.innerHeight; 
+
+            star.style.width = `${size}px`;
+            star.style.height = `${size}px`;
+            star.style.left = `${x}px`;
+            star.style.top = `${y}px`;
+
+            document.body.appendChild(star);
+        }
+
+        function createStars(count) {
+            for (let i = 0; i < count; i++) {
+                createStar();
+            }
+        }
+        createStars(200);
