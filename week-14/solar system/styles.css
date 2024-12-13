@@ -22,6 +22,7 @@ body {
     left: 50%;
     width: 65px;
     height: 65px;
+    z-index: 1;
     background: radial-gradient(circle, yellow, orange, red);
     border-radius: 50%;
     transform: translate(-50%, -50%);
