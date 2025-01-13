@@ -27,7 +27,7 @@ body {
   align-items: center;
   margin: auto;
   background-image: linear-gradient(to right, indigo, violet);
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 main {
@@ -42,8 +42,6 @@ main {
   border-radius: 1rem;
   padding: 0rem 5rem;
   color: #1f2933;
-  margin-top: 150px;
-  margin-bottom: 150px;
 }
 
 p {
@@ -52,7 +50,7 @@ p {
 
 img {
   width: 100%;
-  max-height: 21rem;
+  max-height: 19rem;
   height: auto;
   margin: 0rem 0 0rem 0;
 }
@@ -126,7 +124,7 @@ input {
 
 .stats {
   text-align: left;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 #attemps{
@@ -140,7 +138,13 @@ input {
   background-color: #F8F9FA;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-family: 'myFirstFont';
+  font-family: fantasy;
+}
+.Attempts-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .try{
@@ -161,19 +165,19 @@ input {
 }
 
 .try-box {
-      display: flex ;
-      align-items: center;
-      margin-top: 2rem;
-      flex-wrap: wrap;
-      padding: 13px;
-      border: 2px solid #007BFF;
-      border-radius: 8px;
-      background-color: #F8F9FA;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  padding: 13px;
+  border: 2px solid #007BFF;
+  border-radius: 8px;
+  background-color: #F8F9FA;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 303px;
 }
-
 
 .try-box > span {
   display: flex;
@@ -183,22 +187,27 @@ input {
 
 
 .try-box b {
-  font-size: 15px;
-  color: #FF5722; 
+  font-size: 13px;
+  color: #FF5722;
+  position: relative;
+  top: 0px;
+  right: 3px;
+  margin-left: 8px;
 }
 
 
 .try-box sup {
-  font-size: 10px;
-  color: #28A745; 
+    font-size: 15px;
+    color: #28A745; 
 }
 
 .try-box d {
-font-size: 12px;
-color: #1077d2;
-font-style: italic;
+  font-size: 12px;
+  color: #1077d2;
+  font-style: italic;
+  position: relative;
+  left: 2px;
 }
-
 .info {
   display: flex;
   justify-content: space-between;
@@ -221,8 +230,7 @@ font-style: italic;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 /* Keyboard Section */
@@ -275,8 +283,8 @@ h2 {
   color:rgb(132 59 11);
   font-size: 25px;
   font-weight: bold;
-  margin-bottom: 35px;
-  margin-top: 35px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 h3 {
@@ -296,11 +304,20 @@ h4 {
 }
 
 #Guesses-report {
-  font-size: 20px;
+  font-size: 3px;
   color: rgb(124, 55, 10);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+#Guesses-report b{
+  font-size: 13px;
+  color: #FF5722;
+  position: relative;
+  top: -10px;
+  right: 3px;
+  margin-left: 8px;
 }
 
 @font-face {
@@ -350,16 +367,19 @@ b {
 }
 
 sup {
-  width: auto;
-  height: auto;
+  width: 37px;
+  height: 37px;
   background-color: #252328;
-  border-radius: 10px;
+  border-radius: 50%;
   font-weight: bold;
-  padding: 3px;
-  margin: 0;
+  padding: 0px;
+  margin-top: 5px;
+  display: flex;
+  text-align: center;
   font-family: cursive;
+  align-items: center;
+  justify-content: center;
 }
-
 
 /* ========================= Media Queries =============================*/
 
