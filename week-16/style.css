@@ -278,6 +278,14 @@ input {
   align-items: center;
 }
 
+.hd{
+    color: white;
+    font-family: cursive;
+    font-style: italic;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
 h2 {
   font-family: myFirstFont;
   color:rgb(132 59 11);
