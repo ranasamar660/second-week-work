@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #503635;
+  --background: #fbfbfb;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+d {
+  margin-bottom: 8%;
+  margin-left: 0%;
+  display: flex;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-image: linear-gradient(to right, indigo, violet);
+  overflow-x: hidden;
+}
+
+main {
+  width: 500px;
+  text-align: center;
+  background-color: var(--background);
+  border: solid var(--dark);
+  background-image: url('images.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-width: 0.8rem;
+  border-radius: 1rem;
+  padding: 0rem 5rem;
+  color: #1f2933;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+img {
+  width: 100%;
+  max-height: 21rem;
+  height: auto;
+  margin: 0rem 0 0rem 0;
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 2.4rem 5rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  text-transform: capitalize;
+  background-color:rgb(161 29 202)
+}
+
+button:hover {
+  box-shadow: rgb(97, 10, 97) 0 1px 30px;
+  transition-duration: 0.1s;
+}
+
+.last-child {
+  background-color: rgb(236, 112, 112);
+}
+
+#board {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newGameBtn button {
+  margin: 2rem 0;
+}
+
+input {
+  background: transparent;
+  margin: 1rem 0rem;
+  padding: 2rem 1rem;
+  width: 25rem;
+  text-align: center;
+  font-family: "josfin sans";
+  font-size: 30px;
+  font-weight: bold;
+  border-image: linear-gradient(to right, #14e2ea 0%, #0c2bf7 100%) 1;
+  outline: none;
+  border-width: 3px;
+}
+
+::placeholder {
+  color: rgb(246, 235, 235);
+  opacity: 3;
+}
+
+#keyboard {
+  margin-bottom: 50px;
+  padding: 8px 0px;
+}
+
+.stats {
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+#attemps{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #130101;
+  padding: 8px;
+  border: 2px solid #007BFF;
+  border-radius: 8px;
+  background-color: #F8F9FA;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'myFirstFont';
+}
+
+.try{
+  font-family: cursive;
+  text-align: center;
+  margin-top: 2rem;
+  color: white;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.try-2{
+  font-family: cursive;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.try-box {
+      display: flex ;
+      align-items: center;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+      padding: 13px;
+      border: 2px solid #007BFF;
+      border-radius: 8px;
+      background-color: #F8F9FA;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.try-box > span {
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+}
+
+
+.try-box b {
+  font-size: 15px;
+  color: #FF5722; 
+}
+
+
+.try-box sup {
+  font-size: 10px;
+  color: #28A745; 
+}
+
+.try-box d {
+font-size: 12px;
+color: #1077d2;
+font-style: italic;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.info span {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  font-size: 2rem;
+  color: white;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn--wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* Keyboard Section */
+#keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+#keyboard button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8px;
+  height: 30px;
+  margin: 5px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+
+
+#keyboard button:active {
+  transform: scale(0.95);
+  background: var(--hover);
+  color: black;
+}
+
+
+#newGamme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-family: myFirstFont;
+  color:rgb(132 59 11);
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+
+h3 {
+  font-family: kranky;
+  color:rgb(243 16 27);
+  font-size: 30px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 26px;
+  margin-bottom: 1rem;
+  color: #130101;
+  font-family: cursive;
+  font-style: italicte
+}
+
+#Guesses-report {
+  font-size: 20px;
+  color: rgb(124, 55, 10);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(assets/fonts/Frijole-Regular.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: kranky;
+  src: url(assets/fonts/MeriendaOne-Regular.ttf);
+  font-weight: bold;
+}
+
+p input {
+  display: flex;
+  display: inline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 5px;
+  height: 10px;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 3.5rem 5rem;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgb(73, 12, 92)
+}
+
+p input:hover {
+  box-shadow: rgb(97, 10, 97) 0 1px 30px;
+  transition-duration: 0.1s;
+}
+
+b {
+  font-size: 0.9em;
+  margin: 0px;
+  padding: 0px;
+}
+
+sup {
+  width: auto;
+  height: auto;
+  background-color: #252328;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 3px;
+  margin: 0;
+  font-family: cursive;
+}
+
+
+/* ========================= Media Queries =============================*/
+
+
+/*==================== For Tablests And Small Laptops =======================*/
+
+
+/*==================== For Phones And Smaller Tablets =======================*/
