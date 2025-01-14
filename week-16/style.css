@@ -167,6 +167,7 @@ input {
     align-items: center;
     border: 3px solid #4259f4;
     margin-top: 2px;
+    border: transparent;
 }
 
 .try-2{

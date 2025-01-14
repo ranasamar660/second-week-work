@@ -77,7 +77,7 @@ function handleKeyPress(value) {
   } else if (value === "Ok") {
     if (document.getElementById('inputBox').value === "") {
       document.getElementById('textOutput').innerHTML =
-        'Please Enter a Number to guess';
+        'Please Enter a Number';
     } else {
       compareNum();
     }
