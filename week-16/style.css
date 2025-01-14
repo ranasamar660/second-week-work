@@ -17,6 +17,8 @@ d {
   margin-bottom: 8%;
   margin-left: 0%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -40,7 +42,7 @@ main {
   background-size: cover;
   border-width: 0.8rem;
   border-radius: 1rem;
-  padding: 0rem 5rem;
+  padding: 0rem 2rem;
   color: #1f2933;
 }
 
@@ -150,10 +152,21 @@ input {
 .try{
   font-family: cursive;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 0rem;
   color: white;
   font-weight: bold;
   font-style: oblique;
+}
+
+.try-box{
+   display: flex;
+    flex-wrap: wrap;
+    width: 425px;
+    height: 125px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #4259f4;
+    margin-top: 2px;
 }
 
 .try-2{
@@ -163,51 +176,54 @@ input {
   font-weight: bold;
   font-style: oblique;
 }
-
-.try-box {
+.guess-box {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-top: 1rem;
-  padding: 13px;
-  border: 2px solid #007BFF;
-  border-radius: 8px;
-  background-color: #F8F9FA;
-  font-family: Arial, sans-serif;
-  text-align: left;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 303px;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 0px;
+      margin: 5px;
+      border: 1px solid #007BFF;
+      border-radius: 8px;
+      background-color: #E9ECEF;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 90px;
+      font-family: Arial, sans-serif;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      height: 32px;
 }
 
-.try-box > span {
-  display: flex;
-  align-items: center;
-  gap: 5px; 
-}
-
-
-.try-box b {
-  font-size: 13px;
-  color: #FF5722;
+.guess-box > b {
+  font-size: 11px;
+  color: white;
+  background: red;
+  padding: 2px;
   position: relative;
-  top: 0px;
-  right: 3px;
-  margin-left: 8px;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 12px;
+  width: 24px;
+
 }
 
-
-.try-box sup {
-    font-size: 15px;
-    color: #28A745; 
+.guess-box > sup {
+  font-size: 14px;
+  color: #28A745;
+  margin-bottom: 4px;
 }
 
-.try-box d {
+.guess-box > d {
   font-size: 12px;
-  color: #1077d2;
+  color: white;
   font-style: italic;
-  position: relative;
-  left: 2px;
+  background: black;
+  padding: 1px;
+  width: 25px;
+  text-align: center;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
+
+
 .info {
   display: flex;
   justify-content: space-between;
@@ -278,14 +294,6 @@ input {
   align-items: center;
 }
 
-.hd{
-    color: white;
-    font-family: cursive;
-    font-style: italic;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
 h2 {
   font-family: myFirstFont;
   color:rgb(132 59 11);
@@ -312,20 +320,10 @@ h4 {
 }
 
 #Guesses-report {
-  font-size: 3px;
-  color: rgb(124, 55, 10);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-#Guesses-report b{
-  font-size: 13px;
-  color: #FF5722;
-  position: relative;
-  top: -10px;
-  right: 3px;
-  margin-left: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
 }
 
 @font-face {
@@ -375,12 +373,7 @@ b {
 }
 
 sup {
-  width: 37px;
-  height: 37px;
-  background-color: #252328;
-  border-radius: 50%;
   font-weight: bold;
-  padding: 0px;
   margin-top: 5px;
   display: flex;
   text-align: center;
@@ -388,6 +381,7 @@ sup {
   align-items: center;
   justify-content: center;
 }
+
 
 /* ========================= Media Queries =============================*/
 

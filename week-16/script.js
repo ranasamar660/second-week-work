@@ -27,7 +27,7 @@ function compareNum () {
   userNum = Number(document.getElementById('inputBox').value)
   var a = ordinalNumber();
   var b = hiLow();
-  userGuess = [...userGuess, "<b>"+a+"</b>"+"<sup>"+userNum+"</sup>"+"<d>"+b+"</d>"]
+  userGuess = [...userGuess, `<div class="guess-box"><b>${a}</b><sup>${userNum}</sup><d>${b}</d></div>`];
   document.getElementById('Guesses').innerHTML = userGuess
 
   if (userNum < randomNum) {
@@ -50,7 +50,6 @@ function compareNum () {
     document.getElementById('newGamme').style.display = 'block'
     document.getElementById('new').innerHTML = 'You Won The Game 🤠🤓'
 
-    userGuess = [...userGuess,"<b>",a,"</b>","<sup>",userNum,"</sup>",]
     document.getElementById('Guesses-report').innerHTML = userGuess
    //document.getElementById('attemps').innerHTML = userGuess.length
   }
@@ -116,5 +115,5 @@ function ordinalNumber(){
 function hiLow(){
   if(userNum > randomNum) {return "high"}
   else if(userNum < randomNum) {return "low"}
-  else{return " "}
+  else{return "won"}
 }
