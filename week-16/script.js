@@ -109,6 +109,12 @@ function ordinalNumber(){
     else if(attemptLeft===1){return "2nd"}
     else if(attemptLeft===2){return "3rd"}
     else if(attemptLeft==3){return "4th"}
+    else if(attemptLeft==4){return "5th"}
+    else if(attemptLeft==5){return "6th"}
+    else if(attemptLeft==6){return "7th"}
+    else if(attemptLeft==7){return "8th"}
+    else if(attemptLeft==8){return "9th"}
+    else if(attemptLeft==9){return "10th"}
     else{return attemptLeft +'th'}
 
 }
