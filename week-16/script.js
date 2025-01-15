@@ -24,10 +24,10 @@ const startGame = () => {
 
 //game logic
 function compareNum () {
-  userNum = Number(document.getElementById('inputBox').value)
+  userNum = Number(document.getElementById('inputBox').value);
   var a = ordinalNumber();
   var b = hiLow();
-  userGuess = [...userGuess, `<div class="guess-box"><b>${a}</b><sup>${userNum}</sup><d>${b}</d></div>`];
+  userGuess = [...userGuess, `<div class="guess-box"><b>${a}</b><sup>${userNum}</sup><d>${b}</d></div>`].join('');
   document.getElementById('Guesses').innerHTML = userGuess
 
   if (userNum < randomNum) {
@@ -123,3 +123,19 @@ function hiLow(){
   else if(userNum < randomNum) {return "low"}
   else{return "won"}
 }
+
+
+document.addEventListener('keydown', function (event) {
+  event.preventDefault(); 
+
+  if (event.key === 'ArrowUp') {
+  } else if (event.key === 'ArrowDown') {
+  } else if (event.key === ' ') {
+
+  }
+});
+
+document.addEventListener('touchstart', function (event) {
+  event.preventDefault(); 
+}, { passive: false });
+document.getElementById('gameArea').focus();

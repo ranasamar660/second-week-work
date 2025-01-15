@@ -30,6 +30,11 @@ body {
   margin: auto;
   background-image: linear-gradient(to right, indigo, violet);
   overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;   
+  -ms-user-select: none;     
+  user-select: none;         
+
 }
 
 main {
@@ -119,6 +124,17 @@ input {
   opacity: 3;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
 #keyboard {
   margin-bottom: 50px;
   padding: 8px 0px;
@@ -163,7 +179,7 @@ input {
     flex-wrap: wrap;
     width: 425px;
     height: 128px;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     border: 3px solid #4259f4;
     margin-top: 2px;
