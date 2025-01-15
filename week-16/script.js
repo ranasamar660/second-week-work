@@ -134,8 +134,3 @@ document.addEventListener('keydown', function (event) {
 
   }
 });
-
-document.addEventListener('touchstart', function (event) {
-  event.preventDefault(); 
-}, { passive: false });
-document.getElementById('gameArea').focus();
