@@ -202,26 +202,26 @@ input {
   position: relative;
   border-top-left-radius: 7px;
   border-bottom-right-radius: 12px;
-  width: 24px;
+  width: 27px;
 
 }
 
 .guess-box > sup {
-  font-size: 14px;
+  font-size: 17px;
   color: #28A745;
   margin-bottom: 4px;
 }
 
 .guess-box > d {
-  font-size: 12px;
-  color: white;
-  font-style: italic;
-  background: black;
-  padding: 1px;
-  width: 25px;
-  text-align: center;
-  border-bottom-left-radius: 8px;
-  border-top-right-radius: 8px;
+  font-size: 11px;
+    color: white;
+    font-style: italic;
+    background: black;
+    padding: 1px;
+    width: 29px;
+    text-align: center;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 
