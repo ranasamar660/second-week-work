@@ -1,0 +1,117 @@
+@media only screen and (max-width: 1200px) {
+  #box {
+    width: 300px;
+    height: 200px;
+  }
+  p {
+    font-size: 27px;
+    margin: 7px;
+  }
+  .d-none {
+    display: none;
+  }
+  #keyboard {
+    width: 600px;
+    height: 300px;
+  }
+  .alphabet {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .modal {
+    width: 90%;
+  }
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  #box {
+    width: 240px;
+    height: 200px;
+  }
+  p {
+    font-size: 30px;
+    margin: 7px;
+  }
+  .d-none {
+    display: none;
+  }
+  #keyboard {
+    width: 370px;
+    height: 230px;
+  }
+  .alphabet {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+  .modal {
+    width: 70%;
+  }
+  .centerMan {
+    margin: 20px 100px 20px 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 30px;
+    margin: 7px;
+  }
+  .d-none {
+    display: none;
+  }
+  .d-none {
+    display: none;
+  }
+  .alphabet {
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+  }
+  .modal {
+    width: 80%;
+  }
+  .centerMan {
+    margin: 20px 100px 20px 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  p {
+    font-size: 30px;
+    margin: 7px;
+  }
+  .d-none {
+    display: none;
+  }
+  .alphabet {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+  .modal {
+    width: 100%;
+  }
+  .centerMan {
+    margin: 20px 100px 20px 10px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  p {
+    font-size: 20px;
+    margin: 7px;
+  }
+  .d-none {
+    display: none;
+  }
+  .alphabet {
+    width: 18px;
+    height: 18px;
+  }
+  .modal {
+    width: 100%;
+  }
+}

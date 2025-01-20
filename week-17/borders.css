@@ -1,0 +1,89 @@
+.bd-lightBrown {
+  border: 1px solid rgb(184, 83, 44);
+  background-color: rgb(255, 160, 122);
+}
+.bd-lightGreen {
+  background-color: rgb(255, 222, 173);
+  border: 1px solid rgb(194, 138, 54);
+}
+.bd-blue {
+  border: 1px solid rgb(9, 109, 104);
+  background-color: rgb(32, 178, 170);
+}
+.bd-brown {
+  background-color: rgb(244, 164, 96);
+  border: 1px solid rgb(167, 91, 25);
+}
+.bd-pink {
+  border: 1px solid rgb(180, 81, 81);
+  background-color: rgb(240, 128, 128);
+}
+.bd-darkBlue {
+  background-color: rgb(119, 136, 153);
+  border: 1px solid rgb(44, 88, 133);
+}
+.bd-lightBlue {
+  background-color: rgb(135, 206, 250);
+  border: 1px solid rgb(49, 144, 204);
+}
+.bd-skyBlue {
+  background-color: rgb(173, 216, 230);
+  border: 1px solid rgb(44, 119, 145);
+}
+
+.bd-Green {
+  background-color: rgb(144, 238, 144);
+  border: 1px solid rgb(60, 187, 60);
+}
+.bd-Green:hover {
+  background-color: rgb(87, 216, 87);
+  border: 1px solid rgb(60, 187, 60);
+}
+
+.bd-lightPink {
+  background-color: rgb(255, 184, 194);
+  border: 1px solid rgb(180, 70, 84);
+}
+
+.br-10px {
+  border-radius: 10px;
+}
+
+.bd-lightPink:hover {
+  border: 1px solid rgb(180, 81, 81);
+  background-color: rgb(240, 128, 128);
+}
+
+.bd-lightBrown:hover {
+  background-color: rgb(255, 222, 173);
+  border: 1px solid rgb(194, 138, 54);
+}
+.bd-brown:hover {
+  border: 1px solid rgb(184, 83, 44);
+  background-color: rgb(255, 160, 122);
+}
+
+.bd-pink:hover {
+  background-color: rgb(255, 184, 194);
+  border: 1px solid rgb(180, 70, 84);
+}
+.bd-blue:hover {
+  background-color: rgb(173, 216, 230);
+  border: 1px solid rgb(44, 119, 145);
+}
+.bd-darkBlue:hover {
+  background-color: rgb(173, 216, 230);
+  border: 1px solid rgb(44, 119, 145);
+}
+.bd-lightBlue:hover {
+  border: 1px solid rgb(9, 109, 104);
+  background-color: rgb(32, 178, 170);
+}
+.bd-skyBlue:hover {
+  border: 1px solid rgb(9, 109, 104);
+  background-color: rgb(32, 178, 170);
+}
+.bd-lightGreen:hover {
+  border: 1px solid rgb(184, 83, 44);
+  background-color: rgb(255, 160, 122);
+}

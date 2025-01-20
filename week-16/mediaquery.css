@@ -1,0 +1,141 @@
+/* Media Queries */
+
+/* Mobile devices (up to 480px wide) */
+@media only screen and (max-width: 480px) {
+    body {
+      flex-direction: column;
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    main {
+      width: 90%;
+      padding: 1rem;
+      border-width: 0.4rem;
+      font-size: 1.4rem;
+    }
+  
+    button {
+      padding: 1.5rem 3rem;
+      font-size: 1.6rem;
+    }
+  
+    input {
+      width: 18rem;
+      font-size: 1.8rem;
+    }
+  
+    #keyboard button {
+      width: 30px;
+      height: 30px;
+      font-size: 1.5rem;
+      margin: 2px;
+    }
+  
+    h2, h3, h4 {
+      font-size: 1.8rem;
+    }
+  
+    #attemps, .guess-box {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Small tablets and larger phones (481px to 767px) */
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    main {
+      width: 80%;
+      font-size: 1.6rem;
+    }
+  
+    button {
+      padding: 2rem 4rem;
+      font-size: 1.8rem;
+    }
+  
+    input {
+      width: 22rem;
+      font-size: 2rem;
+    }
+  
+    #keyboard button {
+      width: 40px;
+      height: 40px;
+      font-size: 2rem;
+    }
+  
+    h2, h3, h4 {
+      font-size: 2rem;
+    }
+  
+    #attemps, .guess-box {
+      font-size: 1.4rem;
+    }
+  }
+  
+  /* Tablets (768px to 1024px) */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    main {
+      width: 70%;
+      padding: 2rem;
+      font-size: 1.8rem;
+    }
+  
+    button {
+      padding: 2.2rem 4.5rem;
+      font-size: 2rem;
+    }
+  
+    input {
+      width: 25rem;
+      font-size: 2.4rem;
+    }
+  
+    #keyboard button {
+      width: 50px;
+      height: 50px;
+      font-size: 2.2rem;
+    }
+  
+    h2, h3, h4 {
+      font-size: 2.4rem;
+    }
+  
+    #attemps, .guess-box {
+      font-size: 1.6rem;
+    }
+  }
+  
+  /* Laptops (1025px to 1440px) */
+  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    main {
+      width: 60%;
+      padding: 3rem;
+      font-size: 2rem;
+    }
+  
+    button {
+      padding: 2.5rem 5rem;
+      font-size: 2.2rem;
+    }
+  
+    input {
+      width: 28rem;
+      font-size: 2.6rem;
+    }
+  
+    #keyboard button {
+      width: 60px;
+      height: 60px;
+      font-size: 2.4rem;
+    }
+  
+    h2, h3, h4 {
+      font-size: 2.8rem;
+    }
+  
+    #attemps, .guess-box {
+      font-size: 1.8rem;
+    }
+  }
+  
