@@ -12,6 +12,7 @@ playAgain = document.getElementById('restart');
 let hang = document.getElementById('hang');
 let head = document.getElementById('head');
 let neck = document.getElementById('neack');
+let belly = document.getElementById('belly')
 let rightHand = document.getElementById('righthand');
 let leftHand = document.getElementById('lefthand');
 let rightLeg = document.getElementById('rightleg');
@@ -30,7 +31,7 @@ words = ['milk','good','bad','number','learning','gaming','element','html','java
 
 let winCount = 0;
 let counter = 0;
-let retry = 10;
+let retry = 12;
 let userPressedWord = '';
 let randomNum = '';
 console.log(randomNum)
@@ -42,6 +43,7 @@ parts = [
     hang,
     head,
     neck,
+    belly,
     leftHand,
     rightHand,
     leftLeg,
@@ -124,19 +126,26 @@ function isStringIncludes(userPressedWord) {
     }
 }
 
-function showManPart() {
-    remaningTries()
-    var part = parts[counter];
-    counter ++;
-    part.classList.add("white");
-}
 
-function remaningTries(){
-    if(retry <= 0 ){
-        dieSound.play();
-        Clue.innerHTML = 'You Lose Game!';
+function showManPart() {
+    remaningTries(); 
+    if (retry > 0) {
+        var part = parts[counter];
+        counter++;
+        part.classList.add("black","show");
     }
 }
+
+
+function remaningTries() {
+    if (retry <= 0) {
+        dieSound.play();
+        Clue.innerHTML = 'Game khatam! Aap haar gaye hain!';
+    } else {
+        attemps.innerHTML = `Aap ke paas ${retry} tries baqi hain.`;
+    }
+}
+
 
 function winGame(randomNum){
     let chars = randomNum.split('');

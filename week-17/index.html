@@ -1,69 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hang Man</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="borders.css" />
-    <link rel="stylesheet" href="mediaQueries.css" />
-  </head>
-  <body>
-    <div id="modal">
-      <dialog class="modal">
-        <h2>Instructions</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          animi nesciunt magnam sunt repudiandae optio omnis recusandae debitis
-          ratione nam?
-        </p>
-        <button class="close-button">Ok</button>
-      </dialog>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hang Man</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="borders.css" />
+  <link rel="stylesheet" href="mediaQueries.css" />
+</head>
+
+<body>
+  <div id="modal">
+    <dialog class="modal">
+      <h2>Instructions</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+        animi nesciunt magnam sunt repudiandae optio omnis recusandae debitis
+        ratione nam?
+      </p>
+      <button class="close-button">Ok</button>
+    </dialog>
+  </div>
+  <div id="wrapper">
+    <div id="chosenCategary"></div>
+    <div id="Clue"></div>
+    <div>
+      <span id="attemps"></span>
     </div>
-    <div id="wrapper">
-      <div id="chosenCategary"></div>
-      <div id="Clue"></div>
-      <div>
-        <span id="attemps"></span>
-      </div>
-      <div id="box">
-        <button class="open-button info">
-          <svg
-            class="svg"
-            xmlns="http://www.w3.org/2000/svg"
-            width="25"
-            height="25"
-            fill="currentColor"
-            class="bi bi-info-circle"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
-            />
-            <path
-              d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
-            />
-          </svg>
-        </button>
-        <div class="centerMan">
+    <div id="box">
+      <button class="open-button info">
+        <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+          class="bi bi-info-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+          <path
+            d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+        </svg>
+      </button>
+      <div class="centerMan">
         <div id="hangStand"></div>
         <div id="hang"></div>
-        <div id="head"> 
-          <div id="left-eye"></div>
-          <div id="right-eye"></div>
-          <div id="mouth"></div>
+        <div id="head">
+          <div class="eyes">
+            <div class="eye-black">
+              <div class="eye-lens"></div>
+            </div>
+            <div class="eye-black">
+              <div class="eye-lens"></div>
+            </div>
+          </div>
+          <div id="mouth">
+            <div class="lips">
+              <div class="toung"></div>
+            </div>
+          </div>
         </div>
         <div id="neack"></div>
-        <div id="righthand"></div>
-        <div id="lefthand"></div>
-        <div id="leftleg"></div>
-        <div id="rightleg"></div>
-        <div id="danda"></div>
+        <div id="belly"></div>
+        <div id="righthand">
+          <div class="fingers">
+            <div class="finger-1"></div>
+            <div class="finger-2"></div>
+            <div class="finger-3"></div>
+            <div class="finger-4"></div>
+            <div class="finger-5"></div>
+          </div>
+        </div>
+        <div id="lefthand">
+          <div class="fingers-r">
+            <div class="finger-1"></div>
+            <div class="finger-2"></div>
+            <div class="finger-3"></div>
+            <div class="finger-r-4"></div>
+            <div class="finger-5"></div>
+          </div>
+        </div>
+        <div id="leftleg">
+          <div class="foot"></div>
+        </div>
+        <div id="rightleg">
+          <div class="foot">
+          </div>
+        </div>
+        <div id="danda">
+          <div class="bulb"></div>
+        </div>
         <div id="stand"></div>
         <div id="hangStand" class="transparrent"></div>
         <div id="hang" class="transparrent"></div>
-        <div id="head" class="transparrent"></div>
+        <div id="head" class="transparrent">
+          <div class="eyes">
+            <div id="leftEye" class="transparrent"></div>
+            <div id="rightEye" class="transparrent"></div>
+          </div>
+          <div id="mouth" class="transparrent"></div>
+        </div>
         <div id="neack" class="transparrent"></div>
         <div id="righthand" class="transparrent"></div>
         <div id="lefthand" class="transparrent"></div>
@@ -72,243 +104,165 @@
         <div id="danda" class="transparrent"></div>
         <div id="stand" class="transparrent"></div>
       </div>
-      </div>
-      <section id="Word"></section>
-      <section id="man"></section>
-      <p class="peragraph">
-        Use the alphabet below to guess the word, or click hint to get a clue.
-      </p>
-      <div class="key">
-        <section id="keyboard">
-          <div class="row">
-            <button class="alphabet bd-lightBrown d-none">`</button>
-            <button class="alphabet bd-lightBrown d-none">1</button>
-            <button class="alphabet bd-pink d-none">2</button>
-            <button class="alphabet bd-darkBlue d-none">3</button>
-            <button class="alphabet bd-lightBlue d-none">4</button>
-            <button class="alphabet bd-lightBlue d-none">5</button>
-            <button class="alphabet bd-skyBlue d-none">6</button>
-            <button class="alphabet bd-skyBlue d-none">7</button>
-            <button class="alphabet bd-Green d-none">8</button>
-            <button class="alphabet bd-lightPink d-none">9</button>
-            <button class="alphabet bd-lightGreen d-none">0</button>
-            <button class="alphabet bd-lightGreen d-none">-</button>
-            <button class="alphabet bd-lightGreen d-none">=</button>
-            <button
-              class="alphabet bd-lightGreen br-10px d-none"
-              style="width: 150px"
-            >
-              backspace
-            </button>
-            <br />
-            <button
-              class="alphabet bd-lightBrown br-10px d-none"
-              style="width: 90px"
-            >
-              tab
-            </button>
-            <button
-              class="alphabet bd-lightBrown"
-              id="q"
-              onclick="typeWord('q')"
-            >
-              Q
-            </button>
-            <button class="alphabet bd-pink" id="w" onclick="typeWord('w')">
-              W
-            </button>
-            <button class="alphabet bd-darkBlue" id="e" onclick="typeWord('e')">
-              E
-            </button>
-            <button
-              class="alphabet bd-lightBlue"
-              id="r"
-              onclick="typeWord('r')"
-            >
-              R
-            </button>
-            <button
-              class="alphabet bd-lightBlue"
-              id="t"
-              onclick="typeWord('t')"
-            >
-              T
-            </button>
-            <button class="alphabet bd-skyBlue" id="y" onclick="typeWord('y')">
-              Y
-            </button>
-            <button class="alphabet bd-skyBlue" id="u" onclick="typeWord('u')">
-              U
-            </button>
-            <button class="alphabet bd-Green" id="i" onclick="typeWord('i')">
-              I
-            </button>
-            <button
-              class="alphabet bd-lightPink"
-              id="o"
-              onclick="typeWord('o')"
-            >
-              O
-            </button>
-            <button
-              class="alphabet bd-lightGreen"
-              id="p"
-              onclick="typeWord('p')"
-            >
-              P
-            </button>
-            <button class="alphabet bd-lightGreen d-none">[</button>
-            <button class="alphabet bd-lightGreen d-none">]</button>
-            <button
-              class="alphabet bd-lightGreen br-10px d-none"
-              style="width: 110px"
-            >
-              \
-            </button>
-            <br />
-            <button
-              class="alphabet br-10px d-none"
-              style="
+    </div>
+    <section id="Word"></section>
+    <section id="man"></section>
+    <p class="peragraph">
+      Use the alphabet below to guess the word, or click hint to get a clue.
+    </p>
+    <div class="key">
+      <section id="keyboard">
+        <div class="row">
+          <button class="alphabet bd-lightBrown d-none">`</button>
+          <button class="alphabet bd-lightBrown d-none">1</button>
+          <button class="alphabet bd-pink d-none">2</button>
+          <button class="alphabet bd-darkBlue d-none">3</button>
+          <button class="alphabet bd-lightBlue d-none">4</button>
+          <button class="alphabet bd-lightBlue d-none">5</button>
+          <button class="alphabet bd-skyBlue d-none">6</button>
+          <button class="alphabet bd-skyBlue d-none">7</button>
+          <button class="alphabet bd-Green d-none">8</button>
+          <button class="alphabet bd-lightPink d-none">9</button>
+          <button class="alphabet bd-lightGreen d-none">0</button>
+          <button class="alphabet bd-lightGreen d-none">-</button>
+          <button class="alphabet bd-lightGreen d-none">=</button>
+          <button class="alphabet bd-lightGreen br-10px d-none" style="width: 150px">
+            backspace
+          </button>
+          <br />
+          <button class="alphabet bd-lightBrown br-10px d-none" style="width: 90px">
+            tab
+          </button>
+          <button class="alphabet bd-lightBrown" id="q" onclick="typeWord('q')">
+            Q
+          </button>
+          <button class="alphabet bd-pink" id="w" onclick="typeWord('w')">
+            W
+          </button>
+          <button class="alphabet bd-darkBlue" id="e" onclick="typeWord('e')">
+            E
+          </button>
+          <button class="alphabet bd-lightBlue" id="r" onclick="typeWord('r')">
+            R
+          </button>
+          <button class="alphabet bd-lightBlue" id="t" onclick="typeWord('t')">
+            T
+          </button>
+          <button class="alphabet bd-skyBlue" id="y" onclick="typeWord('y')">
+            Y
+          </button>
+          <button class="alphabet bd-skyBlue" id="u" onclick="typeWord('u')">
+            U
+          </button>
+          <button class="alphabet bd-Green" id="i" onclick="typeWord('i')">
+            I
+          </button>
+          <button class="alphabet bd-lightPink" id="o" onclick="typeWord('o')">
+            O
+          </button>
+          <button class="alphabet bd-lightGreen" id="p" onclick="typeWord('p')">
+            P
+          </button>
+          <button class="alphabet bd-lightGreen d-none">[</button>
+          <button class="alphabet bd-lightGreen d-none">]</button>
+          <button class="alphabet bd-lightGreen br-10px d-none" style="width: 110px">
+            \
+          </button>
+          <br />
+          <button class="alphabet br-10px d-none" style="
                 width: 100px;
                 background-color: rgb(255, 222, 173);
                 border: 1px solid rgb(194, 138, 54);
-              "
-            >
-              caps lock
-            </button>
-            <button
-              class="alphabet bd-lightBrown"
-              id="a"
-              onclick="typeWord('a')"
-            >
-              A
-            </button>
-            <button class="alphabet bd-pink" id="s" onclick="typeWord('s')">
-              S
-            </button>
-            <button class="alphabet bd-darkBlue" id="d" onclick="typeWord('d')">
-              D
-            </button>
-            <button
-              class="alphabet bd-lightBlue"
-              id="f"
-              onclick="typeWord('f')"
-            >
-              F
-            </button>
-            <button
-              class="alphabet bd-lightBlue"
-              id="g"
-              onclick="typeWord('g')"
-            >
-              G
-            </button>
-            <button class="alphabet bd-skyBlue" id="h" onclick="typeWord('h')">
-              H
-            </button>
-            <button class="alphabet bd-skyBlue" id="j" onclick="typeWord('j')">
-              J
-            </button>
-            <button class="alphabet bd-Green" id="k" onclick="typeWord('k')">
-              K
-            </button>
-            <button
-              class="alphabet bd-lightPink"
-              id="l"
-              onclick="typeWord('l')"
-            >
-              L
-            </button>
-            <button class="alphabet bd-lightGreen d-none">;</button>
-            <button class="alphabet bd-lightGreen d-none">'</button>
-            <button
-              class="alphabet bd-lightGreen br-10px d-none"
-              style="width: 160px"
-            >
-              enter
-            </button>
-            <br />
-            <button
-              class="alphabet bd-lightBrown br-10px d-none"
-              style="width: 130px"
-            >
-              shift
-            </button>
-            <button
-              class="alphabet bd-lightBrown"
-              id="z"
-              onclick="typeWord('z')"
-            >
-              Z
-            </button>
-            <button class="alphabet bd-pink" id="x" onclick="typeWord('x')">
-              X
-            </button>
-            <button class="alphabet bd-darkBlue" id="c" onclick="typeWord('c')">
-              C
-            </button>
-            <button
-              class="alphabet bd-lightBlue"
-              id="v"
-              onclick="typeWord('v')"
-            >
-              V
-            </button>
-            <button
-              class="alphabet bd-lightBlue"
-              id="b"
-              onclick="typeWord('b')"
-            >
-              B
-            </button>
-            <button class="alphabet bd-skyBlue" id="n" onclick="typeWord('n')">
-              N
-            </button>
-            <button class="alphabet bd-skyBlue" id="m" onclick="typeWord('m')">
-              M
-            </button>
-            <button class="alphabet bd-Green d-none"><</button>
-            <button class="alphabet bd-lightPink d-none">></button>
-            <button class="alphabet bd-lightGreen d-none">/</button>
-            <button
-              class="alphabet bd-lightGreen br-10px d-none"
-              style="width: 200px"
-            >
-              shift
-            </button>
-            <br />
-            <button
-              id="hint"
-              class="alphabet bd-lightBrown br-10px"
-              style="width: 100px"
-              onclick="showHint(randomNum)"
-            >
-              Hint
-            </button>
-            <button class="alphabet bd-brown d-none">fn</button>
-            <button class="alphabet bd-lightBrown d-none">win</button>
-            <button class="alphabet bd-blue d-none">alt</button>
-            <button
-              class="alphabet bd-blue br-10px d-none"
-              style="width: 400px"
-            >
-              space
-            </button>
-            <button class="alphabet bd-blue d-none">alt</button>
-            <button class="alphabet bd-brown d-none">fn</button>
-            <button
-              id="restart"
-              class="alphabet bd-lightGreen br-10px"
-              style="width: 130px"
-              onclick="location.reload()"
-            >
-              Replay
-            </button>
-          </div>
-        </section>
-      </div>
+              ">
+            caps lock
+          </button>
+          <button class="alphabet bd-lightBrown" id="a" onclick="typeWord('a')">
+            A
+          </button>
+          <button class="alphabet bd-pink" id="s" onclick="typeWord('s')">
+            S
+          </button>
+          <button class="alphabet bd-darkBlue" id="d" onclick="typeWord('d')">
+            D
+          </button>
+          <button class="alphabet bd-lightBlue" id="f" onclick="typeWord('f')">
+            F
+          </button>
+          <button class="alphabet bd-lightBlue" id="g" onclick="typeWord('g')">
+            G
+          </button>
+          <button class="alphabet bd-skyBlue" id="h" onclick="typeWord('h')">
+            H
+          </button>
+          <button class="alphabet bd-skyBlue" id="j" onclick="typeWord('j')">
+            J
+          </button>
+          <button class="alphabet bd-Green" id="k" onclick="typeWord('k')">
+            K
+          </button>
+          <button class="alphabet bd-lightPink" id="l" onclick="typeWord('l')">
+            L
+          </button>
+          <button class="alphabet bd-lightGreen d-none">;</button>
+          <button class="alphabet bd-lightGreen d-none">'</button>
+          <button class="alphabet bd-lightGreen br-10px d-none" style="width: 160px">
+            enter
+          </button>
+          <br />
+          <button class="alphabet bd-lightBrown br-10px d-none" style="width: 130px">
+            shift
+          </button>
+          <button class="alphabet bd-lightBrown" id="z" onclick="typeWord('z')">
+            Z
+          </button>
+          <button class="alphabet bd-pink" id="x" onclick="typeWord('x')">
+            X
+          </button>
+          <button class="alphabet bd-darkBlue" id="c" onclick="typeWord('c')">
+            C
+          </button>
+          <button class="alphabet bd-lightBlue" id="v" onclick="typeWord('v')">
+            V
+          </button>
+          <button class="alphabet bd-lightBlue" id="b" onclick="typeWord('b')">
+            B
+          </button>
+          <button class="alphabet bd-skyBlue" id="n" onclick="typeWord('n')">
+            N
+          </button>
+          <button class="alphabet bd-skyBlue" id="m" onclick="typeWord('m')">
+            M
+          </button>
+          <button class="alphabet bd-Green d-none">
+            <
+              <button class="alphabet bd-lightPink d-none">></button>
+              <button class="alphabet bd-lightGreen d-none">/</button>
+              <button class="alphabet bd-lightGreen br-10px d-none" style="width: 200px">
+                shift
+              </button>
+              <br />
+              <button id="hint" class="alphabet bd-lightBrown br-10px" style="width: 100px"
+                onclick="showHint(randomNum)">
+                Hint
+              </button>
+              <button class="alphabet bd-brown d-none">fn</button>
+              <button class="alphabet bd-lightBrown d-none">win</button>
+              <button class="alphabet bd-blue d-none">alt</button>
+              <button class="alphabet bd-blue br-10px d-none" style="width: 400px">
+                space
+              </button>
+              <button class="alphabet bd-blue d-none">alt</button>
+              <button class="alphabet bd-brown d-none">fn</button>
+              <button id="restart" class="alphabet bd-lightGreen br-10px" style="width: 130px"
+                onclick="location.reload()">
+                Replay
+              </button>
+        </div>
+      </section>
     </div>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
