@@ -1,0 +1,37 @@
+body{
+     font-family: Arial;
+     background-color: skyblue;
+     overscroll-behavior: none;
+}
+#content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+input{
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+
+}
+button{
+    cursor: pointer;
+    border: none;
+    padding:10px ;
+    border-radius: 5px;
+    background-color: navy;
+    color: white;
+}
+button:hover{
+    background-color: mediumblue;
+    transform: rotate(360deg);
+    transition: 2s;
+}
+button:disabled,
+button:disabled:hover{
+    background-color: gray;
+    cursor: default;
+}
