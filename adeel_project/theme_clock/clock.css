@@ -158,4 +158,5 @@ body {
   line-height: 18px;
   transition: all 0.5s ease-in;
   font-size: 12px;
+  padding: 4px;
 }
