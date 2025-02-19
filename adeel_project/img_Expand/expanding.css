@@ -1,0 +1,89 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    width: 90vw;
+  }
+  
+  .img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: all 700ms ease-in;
+  }
+
+  .pic_1{
+    background-image: url('img/samar.jpg');
+    color: white;
+  }
+  .pic_2{
+    background-image: url('img/4aa5b5e250a4ae5b190fff106ef71fa0~c5_1080x1080.jpeg');
+    color: white;
+  }
+  .pic_3{
+    background-image: url('img/Screenshot\ 2025-02-04\ 095708.png');
+  }
+  .pic_4{
+    background-image: url('img/Screenshot\ 2025-02-04\ 095825.png');
+  }
+  .pic_5{
+    background-image: url('img/Screenshot\ 2025-02-04\ 150759.png');
+    color: white;
+  }
+  
+  .img h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+  }
+  
+  .img.active {
+    flex: 5;
+  }
+  
+  .img.active h3 {
+    opacity: 1;
+    transition: opacity 0.9s ease-in 0.5s;
+  }
+
+  .btn{
+    padding: 8px;
+    background-color: rgb(28, 125, 236);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      width: 100vw;
+    }
+  
+    .img:nth-of-type(4),
+    .img:nth-of-type(5) {
+      display: none;
+    }
+  }
