@@ -36,8 +36,8 @@ body {
   border: 0;
   border-radius: 4px;
   padding: 8px 12px;
-  position: fixed;
-  bottom:100px ;
+  margin-top: 10px;
+  
 }
 
 .toggle:focus {
@@ -74,26 +74,28 @@ img{
     position: relative;
     left: 112px;
     font-family: cursive;
+    bottom: 20px;
 }
 
 .six{
     position: relative;
-    left: 112px;
+    left: 115px;
     font-family: cursive;
-    top: 195px;
+    top: 176px;
 }
 
 .three{
     position: relative;
-    left: 229px;
-    top: 64px;
+    left: 228px;
+    top: 44px;
     font-family: cursive;
 }
 
 .nine{
     position: relative;
     font-family: cursive;
-    top: 40px;
+    top: 20px;
+    left: 3px;
 }
 
 .needle {
@@ -169,4 +171,16 @@ img{
   transition: all 0.5s ease-in;
   font-size: 12px;
   padding: 4px;
+}
+
+a{
+  padding: 8px;
+}
+
+.btn{
+  padding: 8px;
+  border: none;
+  color: white;
+  background-color: black;
+  border-radius: 3px;
 }
