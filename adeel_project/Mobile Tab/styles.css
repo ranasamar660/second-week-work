@@ -1,0 +1,127 @@
+ * {
+     box-sizing: border-box;
+ }
+
+ body{
+    background-color: rgb(1, 1, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+ }
+
+ .phone{
+    border: rgb(234, 230, 230) solid 2px;
+    width: 340px;
+    height: 600px;
+    border-radius: 20px;
+    position: relative;
+ }
+
+ .phone .content {
+    opacity: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 51px;
+    height: calc(100% - 60px);
+    left: 0;
+    width: 100%;
+    transition: opacity 0.4s ease;
+  }
+
+ .camera-wrap{
+    width: 100%;
+    background-color: rgb(237, 233, 233);
+    height: 50px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+ }
+ .camera{
+    width: 17px;
+    height: 17px;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+   
+ }
+
+ .speaker{
+    width: 70px;
+    height: 7px;
+    background-color: rgb(14, 13, 13);
+    margin-top: -22px;
+    border-radius: 5px;
+ }
+
+
+.phone .content.show {
+    opacity: 1;
+  }
+  
+
+ .camera-inner{
+    width: 8px;
+    height: 8px;
+    background-color: rgb(48, 47, 47);
+    border-radius: 10px;
+ }
+
+
+ nav{
+    width: 100%;
+    background-color: rgb(237, 233, 233);
+    height: 60px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ .nav-inner{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-top: 10px;
+    color: rgb(115, 110, 110);
+ }
+
+
+ .mb{
+    margin-top: -0px;
+ }
+
+ nav .nav-inner:hover,
+ nav .nav-inner:active{
+    color: #a44a89;
+ }
+
+ button {
+   padding: 8px;
+   border: none;
+   color: rgb(3, 3, 3);
+   background-color: rgb(249, 242, 242);
+   border-radius: 3px;
+   margin-top: 10px;
+ }
+ 
