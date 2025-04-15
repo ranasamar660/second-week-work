@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(66 132 212);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+ }
+
+ .logInWrap{
+    width: 380px;
+    height: 450px;
+    background-color: #2e5b67;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+ }

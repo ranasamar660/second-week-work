@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Page</title>
+  <link rel="stylesheet" href="js.css">
+  <script src="jshtml.js"></script>
+</head>
+
+<body>
+  <button id="allbtn" onclick="AllbtnExam()">Exam Sheet</button>
+  <div class="f">
+    <button id="html-btn" class="nav-btns" onclick="initializeHtmlExam()">HTML Question</button>
+    <button id="css-btn" class="nav-btns" onclick="initializeCssExam()">CSS Question</button>
+    <button id="js-btn" class="nav-btns" onclick="initializejsExam()">JavaScript Question</button>
+  </div>
+  <div class="wrap" id="wrap">
+    <div class="btn-flex">
+      <h1>Exam</h1>
+      <div class="global-timer" id="globalTimer">Total Time: 00:00</div>
+    </div>
+    <p>Answer the following questions within 30 second.</p>
+    <div class="container">
+      <div class="question-container" id="questionContainer">
+      </div>
+        <div class="flex" id="HtmlQuestion">
+          <div class="btn-flex">
+          <button onclick= "htmlbackQuestion()">Pervious</button>
+          <button onclick="htmlnextQuestion()">Next Question</button>
+          <div class="countdown" id="countdown">00:30</div>
+          </div>
+        </div>
+        <div class="flex" id="CssQuestion">
+          <div class="btn-flex">
+          <button onclick="cssbackQuestion()">Pervious</button>
+          <button onclick="cssnextQuestion()">Next Question</button>
+          <div class="countdown" id="countdown1">00:30</div>
+          </div>
+        </div>
+        <div class="flex" id="JsQuestion">
+          <div class="btn-flex">
+          <button onclick="jsbackQuestion()">Pervious</button>
+          <button onclick="jsnextQuestion()">Next Question</button>
+          <div class="countdown" id="countdown2">00:30</div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+<div class="btn-top">
+  <a href="../keyEvent/keyEvent.html">
+    <button>Next Page</button>
+</a>
+<a href="../stickyNav bar/stickynavbar.html">
+    <button>Prev Page</button>
+</a>
+</div>
+
+</body>
+
+</html>
